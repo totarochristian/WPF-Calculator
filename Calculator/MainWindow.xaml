@@ -108,5 +108,21 @@
       Margin="5"
       Grid.Row="4"
       Grid.Column="3"/>
+    <Button x:Name="zeroButton"
+      Content="0"
+      Margin="5"
+      Grid.Row="5"
+      Grid.Column="0"
+      Grid.ColumnSpan="2"/>
+    <Button x:Name="dotButton"
+      Content="."
+      Margin="5"
+      Grid.Row="5"
+      Grid.Column="2"/>
+    <Button x:Name="resultButton"
+      Content="="
+      Margin="5"
+      Grid.Row="5"
+      Grid.Column="3"/>
   </Grid>
 </Window>
