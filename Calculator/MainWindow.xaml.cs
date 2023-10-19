@@ -27,10 +27,14 @@ namespace Calculator
 
         private void sevenButton_Click(object sender, RoutedEventArgs e)
         {
-            if (resultLabel.Content.ToString() == "0")
-                resultLabel.Content = "7";
-            else
-                resultLabel.Content = $"{resultLabel.Content}7";
+            int numericalValue = 0;
+            if(sender.GetType() == typeof(Button) && int.TryParse(((Button)sender).Content.ToString(),out numericalValue))
+            {
+                if (resultLabel.Content.ToString() == "0")
+                    resultLabel.Content = numericalValue.ToString();
+                else
+                    resultLabel.Content = $"{resultLabel.Content}{numericalValue}";
+            }
         }
     }
 }
