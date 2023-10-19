@@ -37,5 +37,10 @@
       Margin="5"
       Grid.Row="1"
       Grid.Column="1"/>
+    <Button x:Name="percentageButton"
+      Content="%"
+      Margin="5"
+      Grid.Row="1"
+      Grid.Column="2"/>
   </Grid>
 </Window>
