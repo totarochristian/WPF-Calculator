@@ -42,5 +42,10 @@
       Margin="5"
       Grid.Row="1"
       Grid.Column="2"/>
+    <Button x:Name="divisionButton"
+      Content="/"
+      Margin="5"
+      Grid.Row="1"
+      Grid.Column="3"/>
   </Grid>
 </Window>
