@@ -104,7 +104,7 @@ namespace Calculator
             return Operator.Error;
         }
 
-        private void resultButton_Click(object sender, RoutedEventArgs e)
+        private void ResultButton_Click(object sender, RoutedEventArgs e)
         {
             double newNumber;
             if (double.TryParse(resultLabel.Content.ToString(), out newNumber))
@@ -126,6 +126,11 @@ namespace Calculator
                 }
                 resultLabel.Content = result.ToString();
             }
+        }
+
+        private void DotButton_Click(object sender, RoutedEventArgs e)
+        {
+            resultLabel.Content = $"{resultLabel.Content},";
         }
     }
 }
