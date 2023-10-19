@@ -103,5 +103,29 @@ namespace Calculator
             }
             return Operator.Error;
         }
+
+        private void resultButton_Click(object sender, RoutedEventArgs e)
+        {
+            double newNumber;
+            if (double.TryParse(resultLabel.Content.ToString(), out newNumber))
+            {
+                switch(selectedOperator)
+                {
+                    case Operator.Addition:
+                        result = lastNumber + newNumber;
+                        break;
+                    case Operator.Multiplication:
+                        result = lastNumber * newNumber;
+                        break;
+                    case Operator.Subtraction:
+                        result = lastNumber - newNumber;
+                        break;
+                    case Operator.Division:
+                        result = lastNumber / newNumber;
+                        break;
+                }
+                resultLabel.Content = result.ToString();
+            }
+        }
     }
 }
