@@ -90,6 +90,16 @@ namespace Calculator
             }
         }
 
-        
+        private Operator ConvertCharToOperator(string value)
+        {
+            switch (value)
+            {
+                case "+": return Operator.Addition;
+                case "*": return Operator.Multiplication;
+                case "-": return Operator.Subtraction;
+                case "/": return Operator.Division;
+            }
+            return Operator.Error;
+        }
     }
 }
