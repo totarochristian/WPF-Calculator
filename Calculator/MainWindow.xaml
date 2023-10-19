@@ -6,12 +6,6 @@
   xmlns:local="clr-namespace:Calculator"
   mc:Ignorable="d"
   Title="MainWindow" Height="525" Width="350">
-  <Window.Resources>
-    <SolidColorBrush x:Key="numbersBackground" Color="#444444"/>
-    <SolidColorBrush x:Key="numbersForeground" Color="White"/>
-    <SolidColorBrush x:Key="operatorsBackground" Color="Orange"/>
-    <SolidColorBrush x:Key="operatorsForeground" Color="White"/>
-  </Window.Resources>
   <Grid Margin="10">
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="*"/>
