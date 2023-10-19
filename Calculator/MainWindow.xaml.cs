@@ -20,11 +20,19 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Constructor of the main window
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Click event handler of all the numerical buttons of the calculator
+        /// </summary>
+        /// <param name="sender">If correctly setted, the sender is a buttons with a numeric value</param>
+        /// <param name="e"></param>
         private void numericalButton_Click(object sender, RoutedEventArgs e)
         {
             int numericalValue = 0;
