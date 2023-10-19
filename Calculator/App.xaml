@@ -10,9 +10,13 @@
     <SolidColorBrush x:Key="operatorsForeground" Color="White"/>
 
     <Style TargetType="Button">
-      <Setter Property="Foreground" Value="Blue"/>
       <Setter Property="FontSize" Value="25"/>
       <Setter Property="Margin" Value="5"/>
+    </Style>
+
+    <Style TargetType="Button" x:Key="numberButtonStyle">
+      <Setter Property="Background" Value="{StaticResource numbersBackground}"/>
+      <Setter Property="Foreground" Value="{StaticResource numbersForeground}"/>
     </Style>
 
     <Style TargetType="Label">
