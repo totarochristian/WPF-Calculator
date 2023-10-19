@@ -25,7 +25,7 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void sevenButton_Click(object sender, RoutedEventArgs e)
+        private void numericalButton_Click(object sender, RoutedEventArgs e)
         {
             int numericalValue = 0;
             if(sender.GetType() == typeof(Button) && int.TryParse(((Button)sender).Content.ToString(),out numericalValue))
