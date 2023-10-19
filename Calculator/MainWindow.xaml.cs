@@ -20,6 +20,9 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Enumerator that rapresent the operations that could be done with the calculator
+        /// </summary>
         public enum Operator
         {
             Addition,
@@ -57,11 +60,21 @@ namespace Calculator
             }
         }
 
+        /// <summary>
+        /// Click event handler of the ac button of the calculator
+        /// </summary>
+        /// <param name="sender">If correctly setted, the sender is the ac button</param>
+        /// <param name="e"></param>
         private void AcButton_Click(object sender, RoutedEventArgs e)
         {
             resultLabel.Content = "0";
         }
 
+        /// <summary>
+        /// Click event handler of the negative button of the calculator
+        /// </summary>
+        /// <param name="sender">If correctly setted, the sender is the negative button</param>
+        /// <param name="e"></param>
         private void NegativeButton_Click(object sender, RoutedEventArgs e)
         {
             if(double.TryParse(resultLabel.Content.ToString(), out lastNumber))
@@ -71,6 +84,11 @@ namespace Calculator
             }
         }
 
+        /// <summary>
+        /// Click event handler of the percentage button of the calculator
+        /// </summary>
+        /// <param name="sender">If correctly setted, the sender is the percentage button</param>
+        /// <param name="e"></param>
         private void PercentageButton_Click(object sender, RoutedEventArgs e)
         {
             if (double.TryParse(resultLabel.Content.ToString(), out lastNumber))
@@ -80,6 +98,11 @@ namespace Calculator
             }
         }
 
+        /// <summary>
+        /// Click event handler of all the operations buttons of the calculator
+        /// </summary>
+        /// <param name="sender">If correctly setted, the sender is an operation button</param>
+        /// <param name="e"></param>
         private void OperationButton_Click(object sender, RoutedEventArgs e)
         {
             //in the if save the value as the last number
@@ -92,6 +115,11 @@ namespace Calculator
             }
         }
 
+        /// <summary>
+        /// Method used to convert a char to the relative operation
+        /// </summary>
+        /// <param name="value">Special character that rapresent the operation to do</param>
+        /// <returns>Operation related to the special character</returns>
         private Operator ConvertCharToOperator(string? value)
         {
             switch (value)
@@ -104,6 +132,11 @@ namespace Calculator
             return Operator.Error;
         }
 
+        /// <summary>
+        /// Click event handler of the result button of the calculator
+        /// </summary>
+        /// <param name="sender">If correctly setted, the sender is the result button</param>
+        /// <param name="e"></param>
         private void ResultButton_Click(object sender, RoutedEventArgs e)
         {
             double newNumber;
@@ -128,9 +161,16 @@ namespace Calculator
             }
         }
 
+        /// <summary>
+        /// Click event handler of the dot button of the calculator
+        /// </summary>
+        /// <param name="sender">If correctly setted, the sender is the dot button</param>
+        /// <param name="e"></param>
         private void DotButton_Click(object sender, RoutedEventArgs e)
         {
-            resultLabel.Content = $"{resultLabel.Content},";
+            //If not containt the , add it
+            if(!resultLabel.Content.ToString().Contains(","))
+                resultLabel.Content = $"{resultLabel.Content},";
         }
     }
 }
