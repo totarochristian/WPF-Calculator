@@ -69,5 +69,15 @@ namespace Calculator
                 resultLabel.Content = lastNumber.ToString();
             }
         }
+
+        private void OperationButton_Click(object sender, RoutedEventArgs e)
+        {
+            //in the if save the value as the last number
+            if (double.TryParse(resultLabel.Content.ToString(), out lastNumber))
+            {
+                //reset the value in the label
+                resultLabel.Content = "0";
+            }
+        }
     }
 }

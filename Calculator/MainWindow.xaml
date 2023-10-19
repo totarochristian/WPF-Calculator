@@ -49,7 +49,8 @@
       Content="/"
       Margin="5"
       Grid.Row="1"
-      Grid.Column="3"/>
+      Grid.Column="3"
+      Click="OperationButton_Click"/>
     <Button x:Name="sevenButton"
       Content="7"
       Margin="5"
@@ -72,7 +73,8 @@
       Content="+"
       Margin="5"
       Grid.Row="2"
-      Grid.Column="3"/>
+      Grid.Column="3"
+      Click="OperationButton_Click"/>
     <Button x:Name="fourButton"
       Content="4"
       Margin="5"
@@ -95,7 +97,8 @@
       Content="-"
       Margin="5"
       Grid.Row="3"
-      Grid.Column="3"/>
+      Grid.Column="3"
+      Click="OperationButton_Click"/>
     <Button x:Name="oneButton"
       Content="1"
       Margin="5"
@@ -118,7 +121,8 @@
       Content="+"
       Margin="5"
       Grid.Row="4"
-      Grid.Column="3"/>
+      Grid.Column="3"
+      Click="OperationButton_Click"/>
     <Button x:Name="zeroButton"
       Content="0"
       Margin="5"
