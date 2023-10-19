@@ -60,5 +60,14 @@ namespace Calculator
                 resultLabel.Content = lastNumber.ToString();
             }
         }
+
+        private void percentageButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (double.TryParse(resultLabel.Content.ToString(), out lastNumber))
+            {
+                lastNumber = lastNumber / 100;
+                resultLabel.Content = lastNumber.ToString();
+            }
+        }
     }
 }
