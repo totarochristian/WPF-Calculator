@@ -25,7 +25,6 @@
       Content="0"
       HorizontalAlignment="Right"
       VerticalAlignment="Bottom"
-      FontSize="60"
       Grid.ColumnSpan="4"/>
     <Button x:Name="acButton"
       Content="AC"

@@ -13,6 +13,10 @@
       <Setter Property="Foreground" Value="Blue"/>
       <Setter Property="FontSize" Value="25"/>
     </Style>
+
+    <Style TargetType="Label">
+      <Setter Property="FontSize" Value="70"/>
+    </Style>
     
   </Application.Resources>
 </Application>
