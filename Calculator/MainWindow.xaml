@@ -42,6 +42,7 @@
       Grid.Column="2"
       Click="PercentageButton_Click"/>
     <Button x:Name="divisionButton"
+      Style="{StaticResource operatorButtonStyle}"
       Content="/"
       Grid.Row="1"
       Grid.Column="3"
@@ -65,6 +66,7 @@
       Grid.Column="2"
       Click="NumericalButton_Click"/>
     <Button x:Name="multiplyButton"
+      Style="{StaticResource operatorButtonStyle}"
       Content="*"
       Grid.Row="2"
       Grid.Column="3"
@@ -88,6 +90,7 @@
       Grid.Column="2"
       Click="NumericalButton_Click"/>
     <Button x:Name="minusButton"
+      Style="{StaticResource operatorButtonStyle}"
       Content="-"
       Grid.Row="3"
       Grid.Column="3"
@@ -111,6 +114,7 @@
       Grid.Column="2"
       Click="NumericalButton_Click"/>
     <Button x:Name="plusButton"
+      Style="{StaticResource operatorButtonStyle}"
       Content="+"
       Grid.Row="4"
       Grid.Column="3"
@@ -128,6 +132,7 @@
       Grid.Column="2"
       Click="DotButton_Click"/>
     <Button x:Name="resultButton"
+      Style="{StaticResource operatorButtonStyle}"
       Content="="
       Grid.Row="5"
       Grid.Column="3"
