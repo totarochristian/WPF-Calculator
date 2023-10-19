@@ -140,7 +140,7 @@ namespace Calculator
         private void ResultButton_Click(object sender, RoutedEventArgs e)
         {
             double newNumber;
-            if (double.TryParse(resultLabel.Content.ToString(), out newNumber))
+            if (selectedOperator != Operator.Error && double.TryParse(resultLabel.Content.ToString(), out newNumber))
             {
                 switch(selectedOperator)
                 {
