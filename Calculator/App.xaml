@@ -9,11 +9,6 @@
     <SolidColorBrush x:Key="operatorsBackground" Color="Orange"/>
     <SolidColorBrush x:Key="operatorsForeground" Color="White"/>
 
-    <Style TargetType="Button">
-      <Setter Property="FontSize" Value="25"/>
-      <Setter Property="Margin" Value="5"/>
-    </Style>
-
     <Style TargetType="Button" x:Key="numberButtonStyle">
       <Setter Property="FontSize" Value="25"/>
       <Setter Property="Margin" Value="5"/>
@@ -21,9 +16,7 @@
       <Setter Property="Foreground" Value="{StaticResource numbersForeground}"/>
     </Style>
 
-    <Style TargetType="Button" x:Key="operatorButtonStyle">
-      <Setter Property="FontSize" Value="25"/>
-      <Setter Property="Margin" Value="5"/>
+    <Style TargetType="Button" x:Key="operatorButtonStyle" BasedOn="{StaticResource numberButtonStyle}">
       <Setter Property="Background" Value="{StaticResource operatorsBackground}"/>
       <Setter Property="Foreground" Value="{StaticResource operatorsForeground}"/>
     </Style>
