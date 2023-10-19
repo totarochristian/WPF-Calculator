@@ -3,10 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Calculator"
              StartupUri="MainWindow.xaml">
-    <Application.Resources>
+  <Application.Resources>
     <SolidColorBrush x:Key="numbersBackground" Color="#444444"/>
     <SolidColorBrush x:Key="numbersForeground" Color="White"/>
     <SolidColorBrush x:Key="operatorsBackground" Color="Orange"/>
     <SolidColorBrush x:Key="operatorsForeground" Color="White"/>
+
+    <Style TargetType="Button">
+      <Setter Property="Foreground" Value="Blue"/>
+    </Style>
+    
   </Application.Resources>
 </Application>
