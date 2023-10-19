@@ -35,7 +35,7 @@ namespace Calculator
         /// </summary>
         /// <param name="sender">If correctly setted, the sender is a buttons with a numeric value</param>
         /// <param name="e"></param>
-        private void numericalButton_Click(object sender, RoutedEventArgs e)
+        private void NumericalButton_Click(object sender, RoutedEventArgs e)
         {
             double numericalValue = 0;
             if(sender.GetType() == typeof(Button) && double.TryParse(((Button)sender).Content.ToString(),out numericalValue))
@@ -47,12 +47,12 @@ namespace Calculator
             }
         }
 
-        private void acButton_Click(object sender, RoutedEventArgs e)
+        private void AcButton_Click(object sender, RoutedEventArgs e)
         {
             resultLabel.Content = "0";
         }
 
-        private void negativeButton_Click(object sender, RoutedEventArgs e)
+        private void NegativeButton_Click(object sender, RoutedEventArgs e)
         {
             if(double.TryParse(resultLabel.Content.ToString(), out lastNumber))
             {
@@ -61,7 +61,7 @@ namespace Calculator
             }
         }
 
-        private void percentageButton_Click(object sender, RoutedEventArgs e)
+        private void PercentageButton_Click(object sender, RoutedEventArgs e)
         {
             if (double.TryParse(resultLabel.Content.ToString(), out lastNumber))
             {
