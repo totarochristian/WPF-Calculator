@@ -27,16 +27,19 @@
       VerticalAlignment="Bottom"
       Grid.ColumnSpan="4"/>
     <Button x:Name="acButton"
+      Style="{StaticResource additionalButtonStyle}"
       Content="AC"
       Grid.Row="1"
       Grid.Column="0"
       Click="AcButton_Click"/>
     <Button x:Name="negativeButton"
+      Style="{StaticResource additionalButtonStyle}"
       Content="+/1"
       Grid.Row="1"
       Grid.Column="1"
       Click="NegativeButton_Click"/>
     <Button x:Name="percentageButton"
+      Style="{StaticResource additionalButtonStyle}"
       Content="%"
       Grid.Row="1"
       Grid.Column="2"
@@ -127,6 +130,7 @@
       Grid.ColumnSpan="2"
       Click="NumericalButton_Click"/>
     <Button x:Name="dotButton"
+      Style="{StaticResource numberButtonStyle}"
       Content="."
       Grid.Row="5"
       Grid.Column="2"
