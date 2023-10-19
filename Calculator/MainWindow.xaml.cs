@@ -87,10 +87,12 @@ namespace Calculator
             {
                 //reset the value in the label
                 resultLabel.Content = "0";
+                string? operatorCharacter = ((Button)sender).Content.ToString();
+                selectedOperator = ConvertCharToOperator(operatorCharacter);
             }
         }
 
-        private Operator ConvertCharToOperator(string value)
+        private Operator ConvertCharToOperator(string? value)
         {
             switch (value)
             {
