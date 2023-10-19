@@ -44,5 +44,10 @@ namespace Calculator
                     resultLabel.Content = $"{resultLabel.Content}{numericalValue}";
             }
         }
+
+        private void acButton_Click(object sender, RoutedEventArgs e)
+        {
+            resultLabel.Content = "0";
+        }
     }
 }

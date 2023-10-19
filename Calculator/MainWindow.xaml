@@ -31,7 +31,8 @@
       Content="AC"
       Margin="5"
       Grid.Row="1"
-      Grid.Column="0"/>
+      Grid.Column="0"
+      Click="acButton_Click"/>
     <Button x:Name="negativeButton"
       Content="+/1"
       Margin="5"
