@@ -1,10 +1,17 @@
 # WPF-Calculator
-MainWindow
+GUI of the calculator implemented
 
-![MainWindow](/Screenshots/calculator.png)
+![](/Screenshots/calculator.png)
 ***
 ## Main features
-Basic WPF calculator with buttons colors editable in the app file.
+Basic WPF calculator that let the user to:
+* add two numbers
+* subtract two numbers
+* multiply two numbers
+* divide two numbers
+* add/subtract/multiply/divide a percentage of the number
+* get the module of a number
+* get the percentage of a number
 ***
 ## Technologies
 A list of technologies used within the project:
