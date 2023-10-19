@@ -11,6 +11,7 @@
 
     <Style TargetType="Button">
       <Setter Property="Foreground" Value="Blue"/>
+      <Setter Property="FontSize" Value="25"/>
     </Style>
     
   </Application.Resources>
