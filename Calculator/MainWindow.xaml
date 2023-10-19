@@ -68,5 +68,25 @@
       Margin="5"
       Grid.Row="2"
       Grid.Column="3"/>
+    <Button x:Name="fourButton"
+      Content="4"
+      Margin="5"
+      Grid.Row="3"
+      Grid.Column="0"/>
+    <Button x:Name="fiveButton"
+      Content="5"
+      Margin="5"
+      Grid.Row="3"
+      Grid.Column="1"/>
+    <Button x:Name="sixButton"
+      Content="6"
+      Margin="5"
+      Grid.Row="3"
+      Grid.Column="2"/>
+    <Button x:Name="minusButton"
+      Content="-"
+      Margin="5"
+      Grid.Row="3"
+      Grid.Column="3"/>
   </Grid>
 </Window>
