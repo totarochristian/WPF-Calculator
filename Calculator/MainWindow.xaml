@@ -28,5 +28,9 @@
            VerticalAlignment="Bottom"
            FontSize="60"
            Grid.ColumnSpan="4"/>
+    <Button x:Name="acButton"
+            Content="AC"
+            Margin="5"
+            Grid.Row="1"/>
   </Grid>
 </Window>
