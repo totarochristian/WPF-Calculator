@@ -20,6 +20,8 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        double lastNumber, result;
+
         /// <summary>
         /// Constructor of the main window
         /// </summary>
@@ -35,8 +37,8 @@ namespace Calculator
         /// <param name="e"></param>
         private void numericalButton_Click(object sender, RoutedEventArgs e)
         {
-            int numericalValue = 0;
-            if(sender.GetType() == typeof(Button) && int.TryParse(((Button)sender).Content.ToString(),out numericalValue))
+            double numericalValue = 0;
+            if(sender.GetType() == typeof(Button) && double.TryParse(((Button)sender).Content.ToString(),out numericalValue))
             {
                 if (resultLabel.Content.ToString() == "0")
                     resultLabel.Content = numericalValue.ToString();
@@ -48,6 +50,15 @@ namespace Calculator
         private void acButton_Click(object sender, RoutedEventArgs e)
         {
             resultLabel.Content = "0";
+        }
+
+        private void negativeButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(double.TryParse(resultLabel.Content.ToString(), out lastNumber))
+            {
+                lastNumber = lastNumber * -1;
+                resultLabel.Content = lastNumber.ToString();
+            }
         }
     }
 }
