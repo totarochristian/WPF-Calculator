@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Calculator.Classes;
 
 namespace Calculator
 {
@@ -145,16 +146,16 @@ namespace Calculator
                 switch(selectedOperator)
                 {
                     case Operator.Addition:
-                        result = lastNumber + newNumber;
+                        result = SimpleMath.Addition(lastNumber,newNumber);
                         break;
                     case Operator.Multiplication:
-                        result = lastNumber * newNumber;
+                        result = SimpleMath.Multiply(lastNumber, newNumber);
                         break;
                     case Operator.Subtraction:
-                        result = lastNumber - newNumber;
+                        result = SimpleMath.Subtraction(lastNumber, newNumber);
                         break;
                     case Operator.Division:
-                        result = lastNumber / newNumber;
+                        result = SimpleMath.Divide(lastNumber, newNumber);
                         break;
                 }
                 resultLabel.Content = result.ToString();
