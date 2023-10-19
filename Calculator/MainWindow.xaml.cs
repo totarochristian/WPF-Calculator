@@ -20,7 +20,17 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        public enum Operator
+        {
+            Addition,
+            Subtraction,
+            Multiplication,
+            Division,
+            Error
+        }
+
         double lastNumber, result;
+        Operator selectedOperator;
 
         /// <summary>
         /// Constructor of the main window
@@ -79,5 +89,7 @@ namespace Calculator
                 resultLabel.Content = "0";
             }
         }
+
+        
     }
 }
